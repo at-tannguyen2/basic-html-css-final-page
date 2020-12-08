@@ -1,0 +1,58 @@
+// === Font === //
+$font-body: 'Open Sans', sans-serif;
+
+// === Font Weight === //
+$font-weight: (
+  normal: 400,
+  medium: 600,
+  bold: 700
+);
+
+// == Breakpoints === //
+$breakpoints: (
+  small: 480px,
+  medium: 768px,
+  wide: 960px,
+  large: 1024px,
+  largest: 1280px
+);
+
+// === Colors === //
+$colors: (
+  primary: #f19533,
+  primary1: #ff971c,
+  white: #fff,
+  black: #111,
+  txt-black: #242424,
+  txt-black1: #272727,
+  txt-gray: #8d8c8c,
+  txt-gray1: #b9b9b9,
+  txt-gray2: #727272,
+  txt-gray3: #acacac,
+  bg-black: #101010,
+);
+
+// === z-index === //
+$zindexs: (
+  dropdown: 1000,
+  sticky: 1020,
+  fixed: 1030,
+  modal-backdrop: 1040,
+  modal: 1050,
+  popover: 1060,
+  tooltip: 1070
+);
+
+// === Typography === //
+$font-size-base: 0.875rem !default; // 14px
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * .875 !default;
+
+$h-font-size: (
+  h1: $font-size-base * 2.5,
+  h2: $font-size-base * 2,
+  h3: $font-size-base * 1.75,
+  h4: $font-size-base * 1.5,
+  h5: $font-size-base * 1.25,
+  h6: $font-size-base
+);

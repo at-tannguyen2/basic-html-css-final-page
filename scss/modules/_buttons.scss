@@ -1,0 +1,34 @@
+%btn-common {
+  @include pxRem(font-size, 16);
+  @include pxRem(border-radius, 5);
+  color: map-get($colors, white);
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  background-image: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.btn-primary {
+  @extend %btn-common;
+  background-color: map-get($colors, primary);
+  border: 1px solid map-get($colors, primary);
+}
+.btn-outline-primary {
+  @extend %btn-common;
+  background-color: map-get($colors, white);
+  border: 1px solid map-get($colors, white);
+}
+.btn-dark {
+  @extend %btn-common;
+  background-color: map-get($colors, bg-dark);
+  color: map-get($colors, txt-gray2);
+}
+.btn-outline-light {
+  @extend %btn-common;
+  background-color: map-get($colors, white);
+  color: map-get($colors, txt-black);
+  border: 1px solid map-get($colors, white);
+}

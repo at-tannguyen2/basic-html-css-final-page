@@ -1,0 +1,12 @@
+// Background color
+.bg-primary {
+  background-color: map-get($colors, primary1);
+}
+
+// Text colors
+.txt-primary {
+  background-color: map-get($colors, primary);
+}
+.txt-white {
+  color: map-get($colors, white);
+}
