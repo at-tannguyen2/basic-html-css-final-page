@@ -1,0 +1,15 @@
+.section-title {
+  @include pxRem(font-size, 35);
+  position: relative;
+  font-weight: 600;
+  text-align: center;
+  &::after {
+    content: "";
+    @include pxRem(height, 2);
+    @include pxRem(top, 40);
+    @include pxRem(border-top, 3 solid map-get($colors, primary));
+    width: 12%;
+    position: absolute;
+    left: 44%;
+  }
+}
