@@ -5,122 +5,380 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://use.fontawesome.com/0657dd732b.js"></script>
 </head>
 <body>
   <header class="page-header">
     <div class="header-top">
-      <div class="container">
-        <ul class="contact-list">
+      <div class="container flex-between">
+        <ul class="contact-list flex">
           <li>Customer Care</li>
           <li>(888) 123-4567</li>
         </ul>
-        <ul class="socials-list">
-          <li><a href="">Login</a></li>
-          <li><a href=""><i>Icon FB</i></a></li>
-          <li><a href=""><i>Icon Twitter</i></a></li>
-          <li><a href=""><i>Icon GG</i></a></li>
-          <li><a href=""><i>Icon IN</i></a></li>
+        <ul class="socials-list flex">
+          <li><a href="#">Login</a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
         </ul>
       </div>
     </div>
     <nav class="header-nav">
-      <div class="container">
-        <a href="" class="logo">
-          <img src="" alt="Logo">
+      <div class="container flex-between">
+        <a href="#" class="logo">
+          <img src="/image/logo.png" alt="Logo">
         </a>
-        <ul class="header-menu">
-          <li><a href="">Home</a></li>
-          <li><a href="">Page</a></li>
-          <li><a href="">Features</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Shortcodes</a></li>
-          <li><a href="">Bog</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href=""><i>Icon search</i></a></li>
-          <li><a href=""><i>Icon cart</i></a></li>
+        <ul class="header-menu flex">
+          <li class="menu-item">
+            <a class="uppercase" href="#">Home</a>
+            <ul class="dropdown">
+              <li><a href="#">Home page 2</a></li>
+              <li><a href="#">Home page 3</a></li>
+              <li><a href="#">Home page 4</a></li>
+              <li><a href="#">Home page 5</a></li>
+              <li><a href="#">Home page 6</a></li>
+              <li><a href="#">Home page 7</a></li>
+              <li><a href="#">Home page 8</a></li>
+              <li><a href="#">Home page 9</a></li>
+              <li><a href="#">Home page 10</a></li>
+              <li><a href="#">Home page default</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="uppercase" href="#">Page</a>
+            <ul class="dropdown">
+              <li class="dropdown-holder">
+                <a href="#">About</a>
+                <ul class="drop-sup">
+                  <li><a href="#">About Style 1</a></li>
+                  <li><a href="#">About Style 2</a></li>
+                  <li><a href="#">About Style 3</a></li>
+                  <li><a href="#">About Style 4</a></li>
+                  <li><a href="#">About Me</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-holder">
+                <a href="#">Contact</a>
+                <ul class="drop-sup">
+                  <li><a href="#">Contact Classic</a></li>
+                  <li><a href="#">Contact Left Sidebar</a></li>
+                  <li><a href="#">Contact With Full Width Match</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-holder">
+                <a href="#">FAQ</a>
+                <ul class="drop-sup">
+                  <li><a href="#">FAQ Styles 1</a></li>
+                  <li><a href="#">FAQ Styles 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-holder">
+                <a href="#">Other page</a>
+                <ul class="drop-sup">
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Coming Soon</a></li>
+                  <li><a href="#">Full Width Page</a></li>
+                  <li><a href="#">Left Sidebar</a></li>
+                  <li><a href="#">Package Plans</a></li>
+                  <li><a href="#">Right Sidebar</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-holder">
+                <a href="#">Services</a>
+                <ul class="drop-sup">
+                  <li><a href="#">Services Styles 1</a></li>
+                  <li><a href="#">Services Styles 2</a></li>
+                  <li><a href="#">Services Styles 3</a></li>
+                  <li><a href="#">Services Styles 4</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-holder">
+                <a href="#">Team</a>
+                <ul  class="drop-sup">
+                  <li><a href="#">Team Classic</a></li>
+                  <li><a href="#">Team Creative</a></li>
+                  <li><a href="#">Team Dark Style</a></li>
+                  <li><a href="#">Team Parallax</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="uppercase" href="#">Features</a>
+            <ul class="dropdown">
+              <li class="dropdown-holder">
+                <a href="#">Footer</a>
+                <ul  class="drop-sup">
+                  <li><a href="#">Footer Big</a></li>
+                  <li><a href="#">Footer Dark</a></li>
+                  <li><a href="#">Footer Parallax</a></li>
+                  <li><a href="#">Footer White</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-holder">
+                <a href="#">Header</a>
+                <ul class="drop-sup">
+                  <li><a href="#">Header Dark</a></li>
+                  <li><a href="#">Header Left Logo</a></li>
+                  <li><a href="#">Header Modern</a></li>
+                  <li><a href="#">Header Transparent</a></li>
+                  <li><a href="#">Header White</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-holder">
+                <a href="#">Menu Styles</a>
+                <ul class="drop-sup">
+                  <li><a href="#">Menu Boxed</a></li>
+                  <li><a href="#">Menu Dark</a></li>
+                  <li><a href="#">Menu Left logo</a></li>
+                  <li><a href="#">Menu Light</a></li>
+                  <li><a href="#">Menu Transparent</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item big-dropdown">
+            <a class="uppercase" href="#">Portfolio</a>
+            <ul class="dropdown">
+              <li class="col-3">
+                <a href="#" class="title">Portfolio columns</a>
+                <ul class="drop-list">
+                  <li><a href="#"><i class="fa fa-angle-right"></i>One Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Two Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Three Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Four Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Five Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Six Columns</a></li>
+                </ul>
+              </li>
+              <li class="col-3">
+                <a href="#" class="title">Portfolio Styles</a>
+                <ul class="drop-list">
+                  <li><a href="#"><i class="fa fa-angle-right"></i>One Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Two Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Three Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Four Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Five Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Six Columns</a></li>
+                </ul>
+              </li>
+              <li class="col-3">
+                <a href="#" class="title">Portfolio Styles</a>
+                <ul class="drop-list">
+                  <li><a href="#"><i class="fa fa-angle-right"></i>One Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Two Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Three Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Four Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Five Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Six Columns</a></li>
+                </ul>
+              </li>
+              <li class="col-3">
+                <a href="#" class="title">Portfolio Single Page</a>
+                <ul class="drop-list">
+                  <li><a href="#"><i class="fa fa-angle-right"></i>One Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Two Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Three Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Four Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Five Columns</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i>Six Columns</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item big-dropdown">
+            <a class="uppercase" href="#">Shortcodes</a>
+            <ul class="dropdown">
+              <li class="w-20">
+                <a href="#" class="title">Shortcodes 1</a>
+                <ul class="drop-list">
+                  <li><a href="#"><i class="fa fa-plus-circle"></i>Accordions</a></li>
+                  <li><a href="#"><i class="fa fa-exclamation"></i>Alerts</a></li>
+                  <li><a href="#"><i class="fa fa-bars"></i>Animations</a></li>
+                  <li><a href="#"><i class="fa fa-quote-right"></i>Blockquotes</a></li>
+                  <li><a href="#"><i class="fa fa-share"></i>Breadcrumbs</a></li>
+                  <li><a href="#"><i class="fa fa-external-link-square"></i>Buttons</a></li>
+                  <li><a href="#"><i class="fa fa-level-up"></i>Call to Action</a></li>
+                  <li><a href="#"><i class="fa fa-user"></i>Clients to logo</a></li>
+                  <li><a href="#"><i class="fa fa-sort"></i>Carousel Slider</a></li>
+                  <li><a href="#"><i class="fa fa-text-height"></i>Counter</a></li>
+                </ul>
+              </li>
+              <li class="w-20">
+                <a href="#" class="title">Shortcodes 2</a>
+                <ul class="drop-list">
+                  <li><a href="#"><i class="fa fa-th"></i>Content Boxer</a></li>
+                  <li><a href="#"><i class="fa fa-table"></i>Data table</a></li>
+                  <li><a href="#"><i class="fa fa-calendar-check-o"></i>Date and Time</a></li>
+                  <li><a href="#"><i class="fa fa-font"></i>Dropcap & Highlight</a></li>
+                  <li><a href="#"><i class="fa fa-minus"></i>Dividers</a></li>
+                  <li><a href="#"><i class="fa fa-upload"></i>File Uploads</a></li>
+                  <li><a href="#"><i class="fa fa-envelope"></i>Forms</a></li>
+                  <li><a href="#"><i class="fa fa-list"></i>Grid Styles</a></li>
+                  <li><a href="#"><i class="fa fa-text-height"></i>Heading Styles</a></li>
+                  <li><a href="#"><i class="fa fa-picture-o"></i>Hover Styles</a></li>
+                </ul>
+              </li>
+              <li class="w-20">
+                <a href="#" class="title">Shortcodes 3</a>
+                <ul class="drop-list">
+                  <li><a href="#"><i class="fa fa-th-large"></i>Icon Boxes</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i>Icon Circles</a></li>
+                  <li><a href="#"><i class="fa fa-list"></i>Icon Lists</a></li>
+                  <li><a href="#"><i class="fa fa-minus"></i>Dividers</a></li>
+                  <li><a href="#"><i class="fa fa-adjust"></i>Labels and Badges</a></li>
+                  <li><a href="#"><i class="fa fa-th"></i>Lightbox</a></li>
+                  <li><a href="#"><i class="fa fa-list"></i>Lists</a></li>
+                  <li><a href="#"><i class="fa fa-map-marker"></i>Maps</a></li>
+                  <li><a href="#"><i class="fa fa-search-plus"></i>Modal Popup</a></li>
+                </ul>
+              </li>
+              <li class="w-20">
+                <a href="#" class="title">Shortcodes 4</a>
+                <ul class="drop-list">
+                  <li><a href="#"><i class="fa fa-th"></i>Content Boxer</a></li>
+                  <li><a href="#"><i class="fa fa-table"></i>Data table</a></li>
+                  <li><a href="#"><i class="fa fa-calendar-check-o"></i>Date and Time</a></li>
+                  <li><a href="#"><i class="fa fa-font"></i>Dropcap & Highlight</a></li>
+                  <li><a href="#"><i class="fa fa-minus"></i>Dividers</a></li>
+                  <li><a href="#"><i class="fa fa-upload"></i>File Uploads</a></li>
+                  <li><a href="#"><i class="fa fa-envelope"></i>Forms</a></li>
+                  <li><a href="#"><i class="fa fa-list"></i>Grid Styles</a></li>
+                  <li><a href="#"><i class="fa fa-text-height"></i>Heading Styles</a></li>
+                  <li><a href="#"><i class="fa fa-picture-o"></i>Hover Styles</a></li>
+                </ul>
+              </li>
+              <li class="w-20">
+                <a href="#" class="title">Shortcodes 5</a>
+                <ul class="drop-list">
+                  <li><a href="#"><i class="fa fa-th"></i>Content Boxer</a></li>
+                  <li><a href="#"><i class="fa fa-table"></i>Data table</a></li>
+                  <li><a href="#"><i class="fa fa-calendar-check-o"></i>Date and Time</a></li>
+                  <li><a href="#"><i class="fa fa-font"></i>Dropcap & Highlight</a></li>
+                  <li><a href="#"><i class="fa fa-minus"></i>Dividers</a></li>
+                  <li><a href="#"><i class="fa fa-upload"></i>File Uploads</a></li>
+                  <li><a href="#"><i class="fa fa-envelope"></i>Forms</a></li>
+                  <li><a href="#"><i class="fa fa-list"></i>Grid Styles</a></li>
+                  <li><a href="#"><i class="fa fa-text-height"></i>Heading Styles</a></li>
+                  <li><a href="#"><i class="fa fa-picture-o"></i>Hover Styles</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="uppercase" href="#">Bog</a>
+            <ul class="dropdown">
+              <li><a href="#">Full width</a></li>
+              <li><a href="#">Left Sidebar</a></li>
+              <li><a href="#">Three Columns</a></li>
+              <li><a href="#">Video Posts</a></li>
+              <li><a href="#">Email Posts</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="uppercase" href="#">Shop</a>
+            <ul class="dropdown">
+              <li><a href="#">Full width</a></li>
+              <li><a href="#">Left Sidebar</a></li>
+              <li><a href="#">Right Sidebar</a></li>
+              <li><a href="#">Three Columns</a></li>
+              <li><a href="#">Product Review</a></li>
+              <li><a href="#">Product Sidebar</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#"><i class="fa fa-search"></i></a></li>
+          <li class="menu-item have-cart"><a href="#"><i class="fa fa-shopping-cart"></i><span class="number">0</span></a></li>
         </ul>
+        <button class="btn-toggle"><i class="fa fa-bars"></i></button>
       </div>
     </nav>
+    <div class="search-box container">
+      <form class="search-form">
+        <input class="search-input" name="search" id="search-input" placeholder="Search...">
+        <button type="button" class="btn-clear">X</button>
+      </form>
+    </div>
   </header>
   <main class="page-main">
     <section class="section-slideshow-top">
-      <div class="slideshow-top">
+      <div class="slideshow-top text-center">
         <div class="slide-content">
-          <p class="subtitle">Commodo augue Aliquam ornare</p>
-          <h2 class="title"></h2>
+          <p class="sub-title">Onsectetuer adipiscing elit sit amet justo</p>
+          <h2 class="title">Creative & Modern</h2>
           <a href="">Get Started</a>
         </div>
-        <ul class="slideshow-list">
-          <li><img src="" alt="Slide"></li>
-          <li><img src="" alt="Slide"></li>
-          <li><img src="" alt="Slide"></li>
+        <ul class="slideshow-list flex">
+          <li class="item"><img src="image/slide_1.jpg" alt="Slide"></li>
+          <!-- <li class="item"><img src="image/silde_2.jpg" alt="Slide"></li>
+          <li class="item"><img src="image/slide_3.jpg" alt="Slide"></li> -->
         </ul>
+        <!-- <button class="btn-prev"><i class="fa fa-chevron-left"></i></button>
+        <button class="btn-next"><i class="fa fa-chevron-right"></i></button> -->
       </div>
       <div class="sliddeshow-bottom">
-        <div class="container">
-          <ul class="information-list">
-            <li class="item">
-              <i class="icon">icon</i>
+        <div class="container relative">
+          <ul class="information-list flex absolute">
+            <li class="item col-4 text-center">
+              <i class="fa fa-television"></i>
               <h5 class="title">Fully Responsive</h5>
-              <p class="description">Vestibulum ante ipsum primis sit amet justo elit faucibus orci luctus ultrices posuere cubilia Curae.</p>
+              <p class="description opacity-8">Vestibulum ante ipsum primis sit amet justo elit faucibus orci luctus ultrices posuere cubilia Curae.</p>
             </li>
-            <li class="item">
-              <i class="icon">icon</i>
+            <li class="item col-4 text-center">
+              <i class="fa fa-clone"></i>
               <h5 class="title">Classic Styles</h5>
-              <p class="description">Vestibulum ante ipsum primis sit amet justo elit faucibus orci luctus ultrices posuere cubilia Curae.</p>
+              <p class="description opacity-8">Vestibulum ante ipsum primis sit amet justo elit faucibus orci luctus ultrices posuere cubilia Curae.</p>
             </li>
-            <li class="item">
-              <i class="icon">icon</i>
+            <li class="item col-4 text-center">
+              <i class="fa fa-lock"></i>
               <h5 class="title">Secure Services</h5>
-              <p class="description">Vestibulum ante ipsum primis sit amet justo elit faucibus orci luctus ultrices posuere cubilia Curae.</p>
+              <p class="description opacity-8">Vestibulum ante ipsum primis sit amet justo elit faucibus orci luctus ultrices posuere cubilia Curae.</p>
             </li>
           </ul>
         </div>
       </div>
     </section>
     <section class="section-introduction">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <img src="" alt="Image-Introduction">
-          </div>
-          <div class="col-md-7">
-            <p class="subtitle">Commodo augue Aliquam ornare</p>
-            <h2 class="title">Suspendisse et justo Praesent mattis et amet Lorem ipsum dolor sit amet consectetuer Praesent justo</h2>
-            <h6 class="description">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet ligula Etiam sit</h6>
-            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet numquam repudiandae officiis quam aliquid? Pariatur nulla rem, consequatur voluptate doloribus quis nesciunt quam asperiores magnam laborum, molestiae, ratione error laboriosam.</p>
-            <ul class="introduction-list">
-              <li>Duis dictum auctor augue</li>
-              <li>Suspendisse sit amet velit in dui.</li>
-              <li>Phasellus a metus nec augue justo.</li>
-              <li>Duis dictum auctor augue</li>
-              <li>Suspendisse sit amet velit in dui.</li>
-              <li>Phasellus a metus nec augue justo.</li>
-              <li>Suspendisse sit amet velit in dui.</li>
-            </ul>
-            <a href="">Read more</a>
-          </div>
+      <div class="container flex">
+        <div class="col-5">
+          <img src="/image/intro-girl.png" alt="Image-Introduction">
+        </div>
+        <div class="main-content col-7">
+          <p class="subtitle">Commodo augue Aliquam ornare</p>
+          <h2 class="section-title">Suspendisse et justo Praesent mattis et amet Lorem ipsum dolor sit amet consectetuer Praesent justo</h2>
+          <h6 class="description">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet ligula Etiam sit</h6>
+          <p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet ligula. Etiam sit amet dolor. Vestibulum ante ipsum primis onsectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue Aliquam ornare hendrerit augue .</p>
+          <ul class="introduction-list flex">
+            <li><i class="fa fa-check"></i>Duis dictum auctor augue</li>
+            <li><i class="fa fa-check"></i>Suspendisse sit amet velit in dui.</li>
+            <li><i class="fa fa-check"></i>Phasellus a metus nec augue justo.</li>
+            <li><i class="fa fa-check"></i>Duis dictum auctor augue</li>
+            <li><i class="fa fa-check"></i>Suspendisse sit amet velit in dui.</li>
+            <li><i class="fa fa-check"></i>Phasellus a metus nec augue justo.</li>
+            <li><i class="fa fa-check"></i>Suspendisse sit amet velit in dui.</li>
+            <li><i class="fa fa-check"></i>Suspendisse sit amet velit in dui.</li>
+          </ul>
+          <a class="btn btn-dark" href=""><i class="fa fa-play-circle"></i>Read more</a>
         </div>
       </div>
     </section>
     <section class="section-service">
-      <div class="service-top">
+      <div class="service-top text-center">
         <p class="subtitle">We are offring best Services</p>
-        <h2 class="title">Feel free to Contact us if you have any questions and also get excellent business plans for your company</h2>
-        <p class="description">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet ligula Etiam .</p>
-        <a href="">Read more</a>
+        <h2 class="section-title">We offer best Services for your Business and Get unlimited Features and many more Features</h2>
+        <a class="btn btn-primary" href="#"><i class="fa fa-play-circle"></i>Read more</a>
       </div>
       <div class="service-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
+        <div class="container relative">
+          <div class="main-content flex absolute">
+            <div class="col-6">
               <p class="subtitle">Commodo augue Aliquam ornare</p>
-              <h2 class="title">Get wide range of products and many more unlimited features</h2>
+              <h2 class="section-title">Get wide range of products and many more unlimited features</h2>
               <p class="description">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet ligula. Etiam sit amet dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Nullam.</p>
-              <a href="">Read more</a>
+              <a class="btn btn-primary" href="#"><i class="fa fa-play-circle"></i>Read more</a>
             </div>
-            <div class="col-md-6">
-              <img src="" alt="Service">
+            <div class="col-6">
+              <img src="/image/image-service.jpg" alt="Service">
             </div>
           </div>
         </div>
@@ -128,99 +386,132 @@
     </section>
     <section class="section-features">
       <div class="container">
-        <ul class="feature-list">
-          <li class="item">
-            <h4 class="feature-name"></h4>
-            <a href="">Read more</a>
+        <ul class="feature-list flex">
+          <li class="item item-1 col-3 m-15">
+            <h4 class="feature-name">Clean & Easy Code</h4>
+            <a class="btn btn-outline-light" href="#"><i class="fa fa-angle-right"></i>Read more</a>
           </li>
-          <li class="item">
-            <h4 class="feature-name"></h4>
-            <a href="">Read more</a>
+          <li class="item item-2 col-3 m-15">
+            <h4 class="feature-name">Beautiful Graphics</h4>
+            <a class="btn btn-outline-light" href="#"><i class="fa fa-angle-right"></i>Read more</a>
           </li>
-          <li class="item">
-            <h4 class="feature-name"></h4>
-            <a href="">Read more</a>
+          <li class="item item-3 col-3 m-15">
+            <h4 class="feature-name">Clean & Easy Code</h4>
+            <a class="btn btn-outline-light" href="#"><i class="fa fa-angle-right"></i>Read more</a>
           </li>
-          <li class="item">
-            <h4 class="feature-name"></h4>
-            <a href="">Read more</a>
+          <li class="item item-4 col-3 m-15">
+            <h4 class="feature-name">Beautiful Graphics</h4>
+            <a class="btn btn-outline-light" href="#"><i class="fa fa-angle-right"></i>Read more</a>
           </li>
         </ul>
       </div>
     </section>
     <section class="section-our-portfolio">
-      <div class="container">
+      <div class="container text-center">
         <p class="subtitle">Our Portfolio</p>
-        <h3 class="title">Detailed digital Works</h3>
+        <h3 class="section-title">Detailed digital Works</h3>
         <p class="description">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet ligula Etiam .</p>
-        <div class="order-list">
-          <button>All</button>
-          <button>Graphics</button>
-          <button>Audio</button>
-          <button>Logo</button>
-          <button>Web design</button>
+        <div class="order-list flex">
+          <div class="order-item">
+            <button class="btn btn-primary">All</button>
+            <p class="filter-count">8</p>
+          </div>
+          <div class="order-item">
+            <button class="btn btn-outline-light">Graphics</button>
+            <p class="filter-count">10</p>
+          </div>
+          <div class="order-item">
+            <button class="btn btn-outline-light">Audio</button>
+            <p class="filter-count">10</p>
+          </div>
+          <div class="order-item">
+            <button class="btn btn-outline-light">Logo</button>
+            <p class="filter-count">10</p>
+          </div>
+          <div class="order-item">
+            <button class="btn btn-outline-light">Web design</button>
+            <p class="filter-count">10</p>
+          </div>
         </div>
-        <ul class="product-list">
-          <li class="item">
-            <a href="">
-              <span>Dashboard</span>
+        <ul class="product-list flex">
+          <li class="item col-4">
+            <a class="inner-item" href="#">
+              <img src="/image/por-1.jpg" alt="Portfolio">
+              <div class="inner-item-text">
+                <p>Dashboard</p>
+              </div>
             </a>
           </li>
-          <li class="item">
-            <a href="">
-              <span>Dashboard</span>
+          <li class="item col-4 hide">
+            <a class="inner-item" href="#">
+              <img src="/image/por-2.jpg" alt="Portfolio">
+              <div class="inner-item-text">
+                <p>Dashboard</p>
+              </div>
             </a>
           </li>
-          <li class="item">
-            <a href="">
-              <span>Dashboard</span>
+          <li class="item col-4 hide">
+            <a class="inner-item" href="#">
+              <img src="/image/por-3.jpg" alt="Portfolio">
+              <div class="inner-item-text">
+                <p>Dashboard</p>
+              </div>
             </a>
           </li>
-          <li class="item">
-            <a href="">
-              <span>Dashboard</span>
+          <li class="item col-4 hide">
+            <a class="inner-item" href="#">
+              <img src="/image/por-4.jpg" alt="Portfolio">
+              <div class="inner-item-text">
+                <p>Dashboard</p>
+              </div>
             </a>
           </li>
-          <li class="item">
-            <a href="">
-              <span>Dashboard</span>
+          <li class="item col-4 hide">
+            <a class="inner-item" href="#">
+              <img src="/image/por-5.jpg" alt="Portfolio">
+              <div class="inner-item-text">
+                <p>Dashboard</p>
+              </div>
             </a>
           </li>
-          <li class="item">
-            <a href="">
-              <span>Dashboard</span>
+          <li class="item col-4 hide">
+            <a class="inner-item" href="#">
+              <img src="/image/por-6.jpg" alt="Portfolio">
+              <div class="inner-item-text">
+                <p>Dashboard</p>
+              </div>
             </a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="section-information">
+    <section class="section-information text-center">
       <div class="information-top">
         <p class="subtitle">Our Excellent Skills and Projects</p>
-        <h3 class="title">Praesent mattis commodo augue Aliquam ornare hendrerit augue Vestibulum ante ipsum primis in faucibus orci</h3>
+        <h3 class="section-title">Praesent mattis commodo augue Aliquam ornare hendrerit augue Vestibulum ante ipsum primis in faucibus orci</h3>
         <p class="description">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet ligula Etiam .</p>
-        <a href="">Read more</a>
+        <a class="btn btn-primary" href="#"><i class="fa fa-play-circle"></i>Read more</a>
       </div>
       <div class="information-bottom">
-        <div class="container">
-          <ul class="information-list">
-            <li class="item">
-              <i>ICON</i>
+        <div class="container relative">
+          <ul class="information-list absolute flex">
+            <li class="item col-3">
+              <i class="fa fa-shopping-basket"></i>
               <h4 class="title">2560</h4>
               <p class="description">Total projects</p>
             </li>
-            <li class="item">
-              <i>ICON</i>
+            <li class="item col-3">
+              <i class="fa fa-clone"></i>
               <h4 class="title">2560</h4>
               <p class="description">Total projects</p>
             </li>
-            <li class="item">
-              <i>ICON</i>
+            <li class="item col-3">
+              <i class="fa fa-map-o"></i>
               <h4 class="title">2560</h4>
               <p class="description">Total projects</p>
             </li>
-            <li class="item">
-              <i>ICON</i>
+            <li class="item col-3">
+              <i class="fa fa-camera-retro"></i>
               <h4 class="title">2560</h4>
               <p class="description">Total projects</p>
             </li>
@@ -228,7 +519,7 @@
         </div>
       </div>
     </section>
-    <section class="section-slideshow-bottom">
+    <!-- <section class="section-slideshow-bottom">
       <h3 class="title">What our Clients says</h3>
       <ul class="slideshow-list">
         <li class="item">
@@ -257,136 +548,146 @@
           <p></p>
         </li>
       </ul>
-    </section>
-    <section class="section-introduction">
-      <div class="introduction-top">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="" alt="">
-          </div>
-          <div class="col-md-6">
-            <p class="subtitle">Who We are and what we do</p>
-            <h2 class="title">Suspendisse et justo Praesent mattis et amet Lorem ipsum dolor sit amet consectetuer</h2>
-            <div class="row">
-              <div class="col-md-4">
-                <img src="" alt="">
-              </div>
-              <div class="col-md-8">
-                <h5 class="title">Get Unlimited Features</h5>
-                <p class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo Praesent mattis et amet.Lorem ipsum dolor sit amet consectetuer adipiscing elit.</p>
-              </div>
+    </section> -->
+    <section class="section-suspendisse">
+      <div class="suspendisse-top flex">
+        <div class="suspendisse-top-left col-6">
+          <img src="/image/sus-left.jpg" alt="Suspendisse">
+        </div>
+        <div class="suspendisse-top-right col-6">
+          <p class="subtitle">Who We are and what we do</p>
+          <h2 class="section-title">Suspendisse et justo Praesent mattis et amet Lorem ipsum dolor sit amet consectetuer</h2>
+          <div class="content flex">
+            <div class="col-4">
+              <img src="/image/sus-content1.jpg" alt="">
             </div>
-            <div class="row">
-              <div class="col-md-4">
-                <img src="" alt="">
-              </div>
-              <div class="col-md-8">
-                <h5 class="title">Get Unlimited Features</h5>
-                <p class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo Praesent mattis et amet.Lorem ipsum dolor sit amet consectetuer adipiscing elit.</p>
-              </div>
+            <div class="col-8">
+              <h5 class="title">Get Unlimited Features</h5>
+              <p class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo Praesent mattis et amet.Lorem ipsum dolor sit amet consectetuer adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="content flex">
+            <div class="col-4">
+              <img src="/image/sus-content2.jpg" alt="">
+            </div>
+            <div class="col-8">
+              <h5 class="title">Get Unlimited Features</h5>
+              <p class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo Praesent mattis et amet.Lorem ipsum dolor sit amet consectetuer adipiscing elit.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="introduction-bottom">
+      <div class="suspendisse-bottom text-center">
         <h4 class="title">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus amet justo</h4>
         <p class="subtitle">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar.</p>
         <div class="action">
-          <a href="">Get Started</a>
-          <a href="">View more</a>
+          <a href="#" class="btn btn-outline-light"><i class="fa fa-play-circle"></i>Get Started</a>
+          <a href="#" class="btn btn-primary"><i class="fa fa-play-circle"></i>View more</a>
         </div>
       </div>
     </section>
-    <section class="section-introduction-team">
+    <section class="section-introduction-team text-center">
       <div class="container">
         <p class="subtitle">Meet Our Team</p>
-        <h3 class="title">Professional Expertises</h3>
+        <h3 class="section-title">Professional Expertises</h3>
         <p class="description">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet ligula Etiam</p>
-        <ul class="introduction-team-list">
-          <li class="item">
+        <ul class="introduction-team-list flex">
+          <li class="item col-3">
             <div class="inner-item-top">
-              <p class="description"></p>
-              <ul class="socials-list">
-                <li class="item"><i>Facbook</i></li>
-                <li class="item"><i>Twitter</i></li>
-                <li class="item"><i>Google</i></li>
-                <li class="item"><i>Instagram</i></li>
-              </ul>
+              <img src="/image/team-1.jpg" alt="">
+              <div class="content">
+                <p class="des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo.</p>
+                <ul class="socials-list flex">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
             </div>
             <div  class="inner-item-bottom">
               <h5 class="item-name">Jennifer</h5>
               <span>Support</span>
             </div>
           </li>
-          <li class="item">
+          <li class="item col-3">
             <div class="inner-item-top">
-              <p class="description"></p>
-              <ul class="socials-list">
-                <li class="item"><i>Facbook</i></li>
-                <li class="item"><i>Twitter</i></li>
-                <li class="item"><i>Google</i></li>
-                <li class="item"><i>Instagram</i></li>
-              </ul>
+              <img src="/image/team-2.jpg" alt="">
+              <div class="content">
+                <p class="des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo.</p>
+                <ul class="socials-list flex">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
             </div>
             <div  class="inner-item-bottom">
               <h5 class="item-name">Jennifer</h5>
-              <span>Support</span>
+              <span>UI Designer</span>
             </div>
           </li>
-          <li class="item">
+          <li class="item col-3">
             <div class="inner-item-top">
-              <p class="description"></p>
-              <ul class="socials-list">
-                <li class="item"><i>Facbook</i></li>
-                <li class="item"><i>Twitter</i></li>
-                <li class="item"><i>Google</i></li>
-                <li class="item"><i>Instagram</i></li>
-              </ul>
+              <img src="/image/team-3.jpg" alt="">
+              <div class="content">
+                <p class="des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo.</p>
+                <ul class="socials-list flex">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
             </div>
             <div  class="inner-item-bottom">
               <h5 class="item-name">Jennifer</h5>
-              <span>Support</span>
+              <span>Marketing</span>
             </div>
           </li>
-          <li class="item">
+          <li class="item col-3">
             <div class="inner-item-top">
-              <p class="description"></p>
-              <ul class="socials-list">
-                <li class="item"><i>Facbook</i></li>
-                <li class="item"><i>Twitter</i></li>
-                <li class="item"><i>Google</i></li>
-                <li class="item"><i>Instagram</i></li>
-              </ul>
+              <img src="/image/team-4.jpg" alt="">
+              <div class="content">
+                <p class="des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo.</p>
+                <ul class="socials-list flex">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
             </div>
             <div  class="inner-item-bottom">
               <h5 class="item-name">Jennifer</h5>
-              <span>Support</span>
+              <span>Founder and CEO</span>
             </div>
           </li>
         </ul>
       </div>
     </section>
-    <section class="section-information">
+    <section class="section-information section-infor-bottom text-center">
       <div class="information-top">
-        <p class="subtitle">We are offring best Services</p>
-        <h2 class="title">Feel free to Contact us if you have any questions and also get excellent business plans for your company</h2>
-        <p class="description">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet ligula Etiam .</p>
+        <p class="subtitle text-white">We are offring best Services</p>
+        <h2 class="section-title text-white">Feel free to Contact us if you have any questions and also get excellent business plans for your company</h2>
+        <p class="description text-white">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet ligula Etiam .</p>
       </div>
       <div class="information-bottom">
-        <div class="container">
-          <ul class="information-list">
+        <div class="container relative">
+          <ul class="information-list flex absolute">
             <li class="item">
-              <i>icon</i>
+              <i class="fa fa-building-o"></i>
               <h5 class="title">Company</h5>
               <p class="description">Praesent mattis commodo augue Aliquam ornare</p>
             </li>
             <li class="item">
-              <i>icon</i>
+              <i class="fa fa-map-marker"></i>
               <h5 class="title">Address</h5>
               <p class="description">Praesent mattis commodo augue Aliquam ornare</p>
             </li>
             <li class="item">
-              <i>icon</i>
+              <i class="fa fa-envelope-o"></i>
               <h5 class="title">Send Mail</h5>
               <p class="description">Praesent mattis commodo augue Aliquam ornare</p>
             </li>
@@ -394,94 +695,114 @@
         </div>
       </div>
     </section>
-    <section class="section-recent-blog">
+    <section class="section-recent-blog text-center">
       <div class="container">
         <p class="subtitle">Recent Blogs</p>
-        <h3 class="title">Latest Blog Posts</h3>
+        <h3 class="section-title">Latest Blog Posts</h3>
         <p class="description">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet ligula Etiam .</p>
-        <ul class="recent-blog-list">
-          <li class="item">
-            <div class="inner-item-top">
-              <img src="" alt="">
-            </div>
-            <div class="inner-item-bottom">
-              <h5 class="item-name"></h5>
-              <span class=""><i class="icon-person"></i>By admin</span>
-              <span class=""><i class="icon-comment"></i>Comments</span>
-              <a href="">Readmore</a>
-            </div>
-          </li>
-          <li class="item">
-            <div class="inner-item-top">
-              <img src="" alt="">
-            </div>
-            <div class="inner-item-bottom">
-              <h5 class="item-name"></h5>
-              <span class=""><i class="icon-person"></i>By admin</span>
-              <span class=""><i class="icon-comment"></i>Comments</span>
-              <a href="">Readmore</a>
+        <ul class="recent-blog-list flex">
+          <li class="item col-4">
+            <div class="inner-item">
+              <div class="inner-item-top">
+                <img src="/image/recent-1.jpg" alt="Recent">
+              </div>
+              <div class="inner-item-bottom">
+                <h5 class="item-name">Praesent mattis commodo augue amet justo</h5>
+                <span><i class="fa fa-user"></i>By admin</span>
+                <span><i class="fa fa-comments-o"></i>Comments</span>
+                <br>
+                <a href="">Read more<i class="fa fa-angle-right"></i></a>
+              </div>
             </div>
           </li>
-          <li class="item">
-            <div class="inner-item-top">
-              <img src="" alt="">
+          <li class="item col-4">
+            <div class="inner-item">
+              <div class="inner-item-top">
+                <img src="/image/recent-2.jpg" alt="Recent">
+              </div>
+              <div class="inner-item-bottom">
+                <h5 class="item-name">Praesent mattis commodo augue amet justo</h5>
+                <span><i class="fa fa-user"></i>By admin</span>
+                <span><i class="fa fa-comments-o"></i>Comments</span>
+                <br>
+                <a href="">Read more<i class="fa fa-angle-right"></i></a>
+              </div>
             </div>
-            <div class="inner-item-bottom">
-              <h5 class="item-name"></h5>
-              <span class=""><i class="icon-person"></i>By admin</span>
-              <span class=""><i class="icon-comment"></i>Comments</span>
-              <a href="">Readmore</a>
+          </li>
+          <li class="item col-4">
+            <div class="inner-item">
+              <div class="inner-item-top">
+                <img src="/image/recent-3.jpg" alt="Recent">
+              </div>
+              <div class="inner-item-bottom">
+                <h5 class="item-name">Praesent mattis commodo augue amet justo</h5>
+                <span><i class="fa fa-user"></i>By admin</span>
+                <span><i class="fa fa-comments-o"></i>Comments</span>
+                <br>
+                <a href="">Read more<i class="fa fa-angle-right"></i></a>
+              </div>
             </div>
           </li>
         </ul>
       </div>
     </section>
     <section class="section-banner">
-      <img src="" alt="Banner">
+      <div class="container flex-centered">
+        <img src="/image/banner-1.png" alt="Banner">
+        <img src="/image/banner-2.png" alt="Banner">
+        <img src="/image/banner-3.png" alt="Banner">
+        <img src="/image/banner-4.png" alt="Banner">
+        <img src="/image/banner-5.png" alt="Banner">
+      </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <img src="" alt="Logo">
-            <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo</p>
-            <p class="company"><i>Icon</i> -company.com</p>
-          </div>
-          <div class="col-md-3">
-            <h3 class="title">About Us</h3>
-            <ul>
-              <li><a href="">Placerat bibendum</a></li>
-              <li><a href="">Ullamcorper odio nec turpis</a></li>
-              <li><a href="">Aliquam porttitor vestibulum ipsum</a></li>
-              <li><a href="">Lobortis enim nec nisi</a></li>
-              <li><a href="">Placerat bibendum</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h3 class="title">More Services</h3>
-            <ul>
-              <li><a href="">Placerat bibendum</a></li>
-              <li><a href="">Ullamcorper odio nec turpis</a></li>
-              <li><a href="">Aliquam porttitor vestibulum ipsum</a></li>
-              <li><a href="">Lobortis enim nec nisi</a></li>
-              <li><a href="">Placerat bibendum</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h3 class="title">Contact Us</h3>
-            <p class="contact-text">Address:<span>No.28 - 63739 street lorem ipsum, ipsum City, Country</span></p>
-            <p class="contact-text">Phone:<span> + 1 (234) 567 8901E</p>
-            <p class="contact-text">Email:<span>support@yoursite.com</span></p>
-            <p class="contact-text">Fax:<span> + 1 (234) 567 8901</span></p>
-          </div>
+      <div class="container flex">
+        <div class="col-3">
+          <img class="logo-footer" src="/image/logo-footer.png" alt="Logo">
+          <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo</p>
+          <p class="company text-white">© -company.com</p>
+        </div>
+        <div class="col-3">
+          <h3 class="title text-white">About Us</h3>
+          <ul class="content-list">
+            <li><a href="#"><i class="fa fa-angle-right"></i>Placerat bibendum</a></li>
+            <li><a href="#"><i class="fa fa-angle-right"></i>Ullamcorper odio nec turpis</a></li>
+            <li><a href="#"><i class="fa fa-angle-right"></i>Aliquam porttitor vestibulum ipsum</a></li>
+            <li><a href="#"><i class="fa fa-angle-right"></i>Lobortis enim nec nisi</a></li>
+            <li><a href="#"><i class="fa fa-angle-right"></i>Placerat bibendum</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h3 class="title text-white">More Services</h3>
+          <ul class="content-list">
+            <li><a href="#"><i class="fa fa-angle-right"></i>Placerat bibendum</a></li>
+            <li><a href="#"><i class="fa fa-angle-right"></i>Ullamcorper odio nec turpis</a></li>
+            <li><a href="#"><i class="fa fa-angle-right"></i>Aliquam porttitor vestibulum ipsum</a></li>
+            <li><a href="#"><i class="fa fa-angle-right"></i>Lobortis enim nec nisi</a></li>
+            <li><a href="#"><i class="fa fa-angle-right"></i>Placerat bibendum</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h3 class="title text-white">Contact Us</h3>
+          <p class="contact-text first text-white">Address:<span><br>No.28 - 63739 street lorem ipsum, ipsum City, Country</span></p>
+          <p class="contact-text text-white">Phone:<span> + 1 (234) 567 8901E</p>
+          <p class="contact-text text-white">Email:<span>support@yoursite.com</span></p>
+          <p class="contact-text text-white">Fax:<span> + 1 (234) 567 8901</span></p>
+          <ul class="socials-list flex">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div class="footer-bottom flex">
       <p>Copyright © 2017 l Company. All rights reserved.</p>
     </div>
   </footer>
+  <script src="handle.js"></script>
 </body>
 </html>

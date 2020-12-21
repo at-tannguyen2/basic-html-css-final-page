@@ -1,0 +1,188 @@
+.header-top {
+  @include pxRem(height, 55);
+  @include pxRem(padding-top, 20);
+  background-color: map-get($colors, bg-black);
+  color: map-get($colors, txt-gray);
+  .contact-list li {
+    @include pxRem(padding, 0 10);
+    @include pxRem(font-size, 14);
+  }
+  .socials-list {
+    li {
+      @include pxRem(padding, 0 10);
+      &:first-child {
+        border-right: 1px solid map-get($colors, txt-gray);
+      }
+      &:hover {
+        > a {
+          color: map-get($colors, white);
+        }
+      }
+    }
+    a {
+      @include pxRem(font-size, 14);
+      color: map-get($colors, txt-gray);
+    }
+  }
+}
+.header-nav {
+  .container {
+    position: relative;
+  }
+  .menu-item {
+    @include pxRem(padding, 38 15);
+    .dropdown {
+      @include pxRem(top, 90);
+      background-color: map-get($colors, white);
+      display: none;
+      position: absolute;
+      li {
+        @include pxRem(padding, 13 30 13 12);
+        @include pxRem(width, 230);
+        @include pxRem(height, 48);
+        border-bottom: 1px solid map-get($colors, border-gray);
+        &:hover {
+          > a {
+            @include pxRem(margin-left, 8);
+            color: map-get($colors, primary);
+          }
+          .title {
+            margin-left: 0;
+            color: map-get($colors, black);
+          }
+        }
+      }
+    }
+    &:hover {
+      > a {
+        color: map-get($colors, primary);
+      }
+      .dropdown {
+        display: block;
+      }
+    }
+    &.big-dropdown {
+      li {
+        width: auto;
+        height: auto;
+      }
+      li,
+      .drop-list li {
+        @include pxRem(padding, 13 30 13 12);
+      }
+      .col-3 {
+        width: 25% !important;
+      }
+      &:hover {
+        .dropdown {
+          @include pxRem(padding, 30 0);
+          display: flex;
+          left: 0;
+          right: 0;
+          li {
+            padding-left: 0;
+            border-bottom: 0;
+            a {
+              @include pxRem(padding-left, 20);
+            }
+            i {
+              @include pxRem(margin-right, 4);
+            }
+          }
+        }
+        .w-20 {
+          width: 20%;
+        }
+        .col-3,
+        .w-20 {
+          .title {
+            text-transform: uppercase;
+            &:hover {
+              @include pxRem(margin-left, 8);
+              color: map-get($colors, primary);
+            }
+          }
+        }
+      }
+    }
+    &.have-cart {
+      position: relative;
+      .number {
+        @include pxRem(padding, 2 4);
+        @include pxRem(top, 22);
+        @include pxRem(font-size, 12);
+        border-radius: 50%;
+        right: 0;
+        background-color: map-get($colors, primary);
+        color: map-get($colors, white);
+        position: absolute;
+      }
+    }
+  }
+  .dropdown-holder {
+    position: relative;
+    .drop-sup {
+      display: none;
+    }
+    &:hover {
+      .drop-sup {
+        @include pxRem(left, 230);
+        background-color: map-get($colors, white);
+        top: 0;
+        position: absolute;
+        display: block;
+      }
+    }
+  }
+  .btn-toggle {
+    display: none;
+  }
+}
+.search-box {
+  @include pxRem(padding, 30 50 30 45);
+  display: none;
+  position: absolute;
+  background-color: map-get($colors, white);
+  right: 0;
+  left: 0;
+  .search-form {
+    .search-input {
+      @include pxRem(width, 1045);
+      @include pxRem(height, 77);
+      @include pxRem(padding, 10);
+      &::placeholder {
+        @include pxRem(font-size, 20);
+        color: map-get($colors, txt-gray2);
+      }
+    }
+    .btn-clear {
+      @include pxRem(font-size, 20);
+      @include pxRem(margin-left, 35);
+      cursor: pointer;
+      border: none;
+    }
+  }
+}
+.show {
+  display: block;
+}
+@include respond-below(medium) {
+  .header-top {
+    @include pxRem(height, 88);
+    @include pxRem(padding-top, 15);
+    .contact-list {
+      flex-direction: column;
+      li {
+        @include pxRem(padding, 5);
+      }
+    }
+  }
+  .header-nav {
+    .header-menu {
+      display: none;
+    }
+    .btn-toggle {
+      display: block;
+    }
+  }
+}

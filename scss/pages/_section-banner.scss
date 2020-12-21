@@ -1,0 +1,24 @@
+.section-banner {
+  @include pxRem(height, 215);
+  background-color: map-get($colors, primary);
+  .container {
+    height: 100%;
+    img {
+      @include pxRem(width, 175);
+      @include pxRem(height, 93);
+      margin: 0 auto;
+    }
+  }
+}
+@include respond-below(medium) {
+  .section-banner {
+    @include pxRem(padding, 55 0);
+    height: auto;
+    .container {
+      img {
+        width: 20%;
+        height: auto;
+      }
+    }
+  }
+}

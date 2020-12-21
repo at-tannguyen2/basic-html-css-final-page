@@ -1,0 +1,79 @@
+.section-information {
+  .information-top {
+    @include pxRem(padding, 175);
+    background-image: url(/image/bg-infor.jpg);
+    background-position: center center;
+    background-size: cover;
+    .section-title {
+      @include pxRem(line-height, 50);
+      color: map-get($colors, white);
+      &::after {
+        @include pxRem(top, 120);
+      }
+    }
+    .description {
+      @include pxRem(font-size, 16);
+      @include pxRem(line-height, 21);
+      @include pxRem(margin, 70 auto 0);
+      color: map-get($colors, white);
+      width: 50%;
+      opacity: 0.6;
+    }
+    .btn-primary {
+      @include pxRem(padding, 17 33);
+      @include pxRem(margin-top, 115);
+      text-transform: uppercase;
+      i {
+        @include pxRem(margin-right, 4);
+      }
+    }
+  }
+  .information-bottom {
+    @include pxRem(height, 415);
+    .information-list {
+      @include pxRem(padding, 65 45);
+      @include pxRem(top, -60);
+      width: 100%;
+      .item {
+        border-right: 0;
+        .fa {
+          @include pxRem(font-size, 40);
+        }
+      }
+      .title {
+        @include pxRem(font-size, 35);
+        @include pxRem(line-height, 35);
+        @include pxRem(margin-top, 25);
+        font-weight: 600;
+      }
+      .description {
+        @include pxRem(font-size, 16);
+        @include pxRem(line-height, 21);
+      }
+    }
+  }
+}
+@include respond-below(medium) {
+  .section-information {
+    .information-top {
+      @include pxRem(padding, 40);
+      .section-title::after {
+        @include pxRem(top, 375);
+      }
+      .description {
+        width: 80%;
+      }
+      .btn-primary {
+        @include pxRem(margin-top, 40);
+      }
+    }
+    .information-bottom {
+      height: auto;
+      .information-list {
+        .col-3 {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

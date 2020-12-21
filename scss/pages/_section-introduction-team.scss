@@ -1,0 +1,104 @@
+.section-introduction-team {
+  @include pxRem(padding, 170 0 150);
+  background-color: map-get($colors, bg-light);
+  .section-title::after {
+    @include pxRem(top, 60);
+  }
+  .description {
+    @include pxRem(font-size, 16);
+    @include pxRem(margin, 50 auto 0);
+    width: 50%;
+    opacity: 0.6;
+  }
+  .introduction-team-list {
+    @include pxRem(margin-top, 125);
+    .item {
+      @include pxRem(padding, 0 15);
+      .inner-item-top {
+        line-height: 0;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s ease-out 0s;
+      }
+      img {
+        transition: all 0.3s ease-out 0s;
+      }
+      .content {
+        background-color: rgba(255, 151, 28, 0.94);
+        color: map-get($colors, white);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.3s ease-out 0s;
+        .des {
+          @include pxRem(padding, 0 20);
+          @include pxRem(font-size, 14);
+          @include pxRem(line-height, 23);
+          @include pxRem(top, 310);
+          position: absolute;
+          transition: all 0.3s ease-out 0s;
+        }
+        .socials-list {
+          @include pxRem(margin-top, 40);
+          @include pxRem(top, 380);
+          left: 50%;
+          position: absolute;
+          justify-content: center;
+          transform: translateX(-50%);
+          transition: all 0.3s ease-out 0s;
+          li {
+            @include pxRem(padding, 0 10);
+            a {
+              color: map-get($colors, white);
+            }
+          }
+        }
+      }
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+        .content {
+          opacity: 1;
+          .des {
+            @include pxRem(top, 110);
+          }
+          .socials-list {
+            @include pxRem(top, 170);
+          }
+        }
+      }
+    }
+    .inner-item-bottom {
+      @include pxRem(padding, 40 0);
+      background-color: map-get($colors, white);
+      span {
+        @include pxRem(margin-top, 15);
+        @include pxRem(padding, 7 15);
+        color: map-get($colors, white);
+        background-color: map-get($colors, primary);
+        display: inline-block;
+      }
+    }
+  }
+}
+@include respond-below(medium) {
+  .section-introduction-team {
+    @include pxRem(padding, 40 0);
+    .section-title::after {
+      @include pxRem(top, 90);
+    }
+    .description {
+      width: 79%;
+    }
+    .introduction-team-list {
+      flex-wrap: wrap;
+      .col-3 {
+        width: 100%;
+      }
+    }
+  }
+}

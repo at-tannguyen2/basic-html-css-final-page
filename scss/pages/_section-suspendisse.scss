@@ -1,0 +1,106 @@
+.section-suspendisse {
+  border-bottom: 0;
+  .suspendisse-top {
+    @include pxRem(height, 964);
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .suspendisse-top-right {
+    @include pxRem(padding, 120);
+    background-color: map-get($colors, bg-light);
+    .section-title {
+      @include pxRem(line-height, 50);
+      @include pxRem(padding-bottom, 50);
+      &::after {
+        @include pxRem(top, 215);
+        left: 0;
+      }
+    }
+    .content {
+      @include pxRem(margin-top, 65);
+      align-items: center;
+      img {
+        @include pxRem(width, 120);
+        @include pxRem(height, 120);
+        border-radius: 50%;
+      }
+      .title {
+        @include pxRem(margin-bottom, 25);
+        @include pxRem(line-height, 25);
+        @include pxRem(font-size, 22);
+        font-weight: 400;
+      }
+      .description {
+        @include pxRem(font-size, 16);
+        opacity: 0.6;
+      }
+    }
+  }
+  .suspendisse-bottom {
+    @include pxRem(height, 395);
+    @include pxRem(padding, 120 420);
+    background-color: map-get($colors, primary);
+    color: map-get($colors, white);
+    .title {
+      @include pxRem(font-size, 27);
+      @include pxRem(line-height, 40);
+      font-weight: 400;
+    }
+    .subtitle {
+      @include pxRem(font-size, 14);
+      color: map-get($colors, white);
+      opacity: 0.6;
+    }
+    .action {
+      .btn {
+        @include pxRem(font-size, 14);
+        @include pxRem(padding, 9 25);
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      .btn-primary {
+        @include pxRem(margin-left, 15);
+        border-color: map-get($colors, white);
+        color: map-get($colors, white);
+      }
+      i {
+        @include pxRem(margin-right, 4);
+      }
+    }
+  }
+}
+@include respond-below(medium) {
+  .section-suspendisse {
+    .suspendisse-top {
+      height: auto;
+      .suspendisse-top-left {
+        display: none;
+      }
+      .col-6 {
+        width: 100%;
+      }
+      .suspendisse-top-right {
+        @include pxRem(padding, 40);
+        .section-title::after {
+          @include pxRem(top, 315);
+        }
+        .content {
+          align-items: flex-start;
+          .col-8 {
+            @include pxRem(padding-left, 50);
+          }
+        }
+      }
+    }
+    .suspendisse-bottom {
+      @include pxRem(padding, 110 15);
+      height: auto;
+      .subtitle {
+        @include pxRem(margin, 20 0);
+        line-height: normal;
+      }
+    }
+  }
+}

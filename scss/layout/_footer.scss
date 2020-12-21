@@ -1,0 +1,80 @@
+.page-footer {
+  .footer-top {
+    @include pxRem(padding, 150 0);
+    background-color: map-get($colors, black);
+    .logo-footer {
+      @include pxRem(margin-bottom, 50);
+    }
+    .description {
+      @include pxRem(font-size, 14);
+      @include pxRem(padding-right, 55);
+      @include pxRem(margin-bottom, 10);
+      color: map-get($colors, txt-gray3);
+    }
+    .company {
+      @include pxRem(font-size, 16);
+      @include pxRem(line-height, 21);
+    }
+    .title {
+      @include pxRem(margin-bottom, 45);
+      @include pxRem(line-height, 25);
+      @include pxRem(font-size, 22);
+      font-weight: 500;
+    }
+    .content-list {
+      li {
+        @include pxRem(padding, 10 0);
+        a {
+          color: map-get($colors, txt-gray2);
+          i {
+            @include pxRem(margin-right, 15);
+          }
+        }
+      }
+    }
+    .contact-text {
+      span {
+        @include pxRem(padding-left, 5);
+        @include pxRem(font-size, 14);
+        @include pxRem(line-height, 23);
+        color: map-get($colors, txt-gray3);
+      }
+      &.first {
+        @include pxRem(margin-bottom, 30);
+      }
+    }
+    .socials-list {
+      @include pxRem(margin-top, 10);
+      li {
+        @include pxRem(padding, 13);
+        a {
+          color: map-get($colors, white);
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    @include pxRem(height, 85);
+    background-color: map-get($colors, bg-black2);
+    align-items: center;
+    justify-content: center;
+    p {
+      @include pxRem(font-size, 14);
+      @include pxRem(line-height, 23);
+      color: map-get($colors, txt-gray2);
+    }
+  }
+}
+@include respond-below(medium) {
+  .page-footer {
+    .footer-top {
+      @include pxRem(padding, 40 0);
+      .container {
+        flex-wrap: wrap;
+      }
+      .col-3 {
+        width: 100%;
+      }
+    }
+  }
+}

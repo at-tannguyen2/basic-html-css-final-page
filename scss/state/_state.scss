@@ -2,14 +2,31 @@
   @include pxRem(font-size, 35);
   position: relative;
   font-weight: 600;
-  text-align: center;
   &::after {
     content: "";
     @include pxRem(height, 2);
     @include pxRem(top, 40);
-    @include pxRem(border-top, 3 solid map-get($colors, primary));
+    @include pxRem(border-top, 2 solid map-get($colors, primary));
     width: 12%;
     position: absolute;
     left: 44%;
   }
+}
+.subtitle {
+  @include pxRem(font-size, 18);
+  @include pxRem(line-height, 40);
+  color: map-get($colors, primary);
+  font-weight: 400;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.text-white {
+  color: map-get($colors, white);
+}
+a {
+  transition: all 0.3s ease-out 0s;
 }

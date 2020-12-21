@@ -1,0 +1,58 @@
+.section-information {
+  &.section-infor-bottom{
+    .information-top {
+      background-color: map-get($colors, primary);
+      background-image: none;
+    }
+    .section-title::after {
+      border-color: map-get($colors, white);
+    }
+    .description {
+      opacity: 1;
+    }
+    .information-bottom {
+      @include pxRem(height, 380);
+      background-color: map-get($colors, bg-light);
+    }
+    .information-list {
+      @include pxRem(top, -60);
+      background-color: map-get($colors, white);
+      color: map-get($colors, txt-black);
+      padding: 0;
+    }
+    .item {
+      @include pxRem(padding, 82 110);
+      border-right: 1px solid map-get($colors, border-gray4) !important;
+      &:last-child {
+        border-right: 0 !important;
+      }
+      i {
+        color: map-get($colors, primary);
+      }
+      .title {
+        @include pxRem(font-size, 22);
+        @include pxRem(line-height, 25);
+        color: map-get($colors, txt-black1);
+        font-weight: 400;
+      }
+      .description {
+        @include pxRem(font-size, 16);
+        @include pxRem(line-height, 21);
+        opacity: 0.7;
+      }
+    }
+  }
+}
+@include respond-below(medium) {
+  .section-information {
+    &.section-infor-bottom {
+      .section-title::after {
+        @include pxRem(top, 320);
+      }
+      .information-bottom {
+        @include pxRem(padding-bottom, 65);
+        height: auto;
+      }
+    }
+  }
+}

@@ -23,12 +23,13 @@
 }
 .btn-dark {
   @extend %btn-common;
-  background-color: map-get($colors, bg-dark);
+  background-color: map-get($colors, bg-black);
   color: map-get($colors, txt-gray2);
+  border: 1px solid map-get($colors, bg-black);
 }
 .btn-outline-light {
   @extend %btn-common;
   background-color: map-get($colors, white);
   color: map-get($colors, txt-black);
-  border: 1px solid map-get($colors, white);
+  border: 1px solid map-get($colors, border-gray3);
 }

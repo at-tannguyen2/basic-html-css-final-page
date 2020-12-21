@@ -1,0 +1,76 @@
+.slideshow-top {
+  color: map-get($colors, white);
+  position: relative;
+  .slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .sub-title {
+      @include pxRem(font-size, 16);
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    .title {
+      @include pxRem(font-size, 70);
+      @include pxRem(margin-bottom, 20);
+    }
+    a {
+      @include pxRem(font-size, 20);
+      color: map-get($colors, white);
+      text-transform: uppercase;
+      font-weight: 400;
+      animation-duration: .6s;
+      animation-timing-function: ease;
+      animation-fill-mode: both;
+    }
+  }
+}
+.sliddeshow-bottom {
+  @include pxRem(height, 466);
+  @include pxRem(margin-bottom, 45);
+  background-image: url(../image/bg-slide.jpg);
+}
+.information-list {
+  @include pxRem(padding, 45);
+  @include pxRem(top, -70);
+  background-color: map-get($colors, primary1);
+  color: map-get($colors, white);
+  .item {
+    @include pxRem(padding, 40);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    &:last-child {
+      border-right: 0;
+    }
+    .fa {
+      @include pxRem(font-size, 60);
+      transition: all 0.3s ease-out 0s;
+    }
+    .title {
+      @include pxRem(font-size, 18);
+      @include pxRem(line-height, 23);
+      @include pxRem(margin, 46 0 16 0);
+      font-weight: 500;
+    }
+  }
+}
+@include respond-below(medium) {
+  .sliddeshow-bottom {
+    height: 100%;
+    @include pxRem(padding-bottom, 45);
+  }
+  .information-list {
+    flex-direction: column;
+    position: static;
+    top: 0;
+    .col-4 {
+      width: 100%;
+    }
+    .item {
+      border-right: 0;
+    }
+  }
+}
+@keyframes showText {
+
+}

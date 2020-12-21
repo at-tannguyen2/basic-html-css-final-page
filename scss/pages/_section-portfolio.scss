@@ -1,0 +1,136 @@
+.section-our-portfolio {
+  @include pxRem(padding, 170 0 150);
+  .section-title::after {
+    @include pxRem(top, 60);
+  }
+  .description {
+    @include pxRem(margin, 50 auto 0);
+    @include pxRem(font-size, 16);
+    @include pxRem(line-height, 21);
+    color: map-get($colors, txt-black1);
+    opacity: 0.7;
+    width: 50%;
+  }
+  .order-list {
+    @include pxRem(margin-top, 120);
+    justify-content: center;
+    .btn {
+      @include pxRem(border-radius, 20);
+      @include pxRem(font-size, 12);
+      @include pxRem(margin, 0 5);
+      span {
+        opacity: 0;
+      }
+      &:hover {
+        ~.filter-count {
+          opacity: 1;
+          transform: translateY(-72px);
+        }
+      }
+    }
+    .btn-primary {
+      @include pxRem(padding, 11 25);
+    }
+    .btn-outline-light {
+      @include pxRem(padding, 11 25);
+      color: map-get($colors, txt-gray4);
+    }
+    .filter-count {
+      @include pxRem(border-radius, 3);
+      @include pxRem(padding, 4 0);
+      @include pxRem(width, 34);
+      background-color: map-get($colors, primary1);
+      transition: all .4s ease-in-out;
+      opacity: 0;
+      position: relative;
+      margin: 0 auto;
+      color: #ffffff;
+      text-align: center;
+      &::after {
+        content: "";
+        @include pxRem(border-top, 4 solid map-get($colors, primary1));
+        @include pxRem(border-left, 4 solid transparent);
+        @include pxRem(border-right, 4 solid transparent);
+        @include pxRem(bottom, -4);
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+  .product-list {
+    @include pxRem(margin-top, 28);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .item {
+      @include pxRem(height, 383);
+      @include pxRem(width, 383);
+      @include pxRem(margin-top, 12);
+    }
+    .inner-item {
+      display: block;
+      position: relative;
+      .inner-item-image {
+        line-height: 0;
+      }
+      .inner-item-text {
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: opacity 0.5s;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        p {
+          @include pxRem(margin-top, 180);
+          @include pxRem(font-size, 14);
+          @include pxRem(line-height, 21);
+          font-weight: 400;
+          color: map-get($colors, white);
+          text-transform: uppercase;
+          position: relative;
+          letter-spacing: 2px;
+          &::after {
+            content: "";
+            @include pxRem(top, 25);
+            left: 45%;
+            position: absolute;
+            width: 10%;
+            border: 0.5px solid map-get($colors, white);
+          }
+        }
+      }
+      &:hover {
+        .inner-item-text {
+          opacity: 1;
+        }
+      }
+    }
+    .hide {
+      display: block;
+    }
+  }
+}
+@include respond-below(medium) {
+  .section-our-portfolio {
+    @include pxRem(padding, 40 15);
+    .section-title::after {
+      @include pxRem(top, 90);
+    }
+    .description {
+      width: 85%;
+    }
+    .order-list {
+      flex-wrap: wrap;
+    }
+    .product-list {
+      .hide {
+        display: none;
+      }
+    }
+  }
+}

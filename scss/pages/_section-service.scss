@@ -1,0 +1,83 @@
+.section-service {
+  .service-top {
+    @include pxRem(padding, 150 200 200);
+    background-image: url(../image/bg-service.jpg);
+    .section-title {
+      @include pxRem(line-height, 50);
+      color: map-get($colors, white);
+      &::after {
+        @include pxRem(top, 115);
+      }
+    }
+    .btn-primary {
+      @include pxRem(padding, 17 33);
+      @include pxRem(margin-top, 115);
+      text-transform: uppercase;
+      i {
+        @include pxRem(margin-right, 4);
+      }
+    }
+  }
+  .service-bottom {
+    @include pxRem(height, 700);
+    background-color: map-get($colors, bg-light);
+    .section-title {
+      @include pxRem(line-height, 50);
+      left: 0;
+      &::after {
+        @include pxRem(top, 160);
+        left: 0;
+      }
+    }
+    .description {
+      @include pxRem(margin-top, 80);
+      @include pxRem(line-height, 23);
+      color: map-get($colors, txt-gray2);
+    }
+    .main-content {
+      @include pxRem(padding, 100);
+      @include pxRem(top, -100);
+      background-color: map-get($colors, white);
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      @include pxRem(margin-top, 60);
+      @include pxRem(padding, 9 24);
+      @include pxRem(font-size, 14);
+      text-transform: uppercase;
+      i {
+        @include pxRem(margin-right, 4);
+      }
+    }
+  }
+}
+@include respond-below(medium) {
+  .section-service {
+    .service-top {
+      @include pxRem(padding, 40);
+      .section-title::after {
+        @include pxRem(top, 315);
+      }
+      .btn-primary {
+        @include pxRem(margin-top, 45);
+      }
+    }
+    .service-bottom {
+      height: auto;
+      .col-6 {
+        width: 100%;
+      }
+      .main-content {
+        @include pxRem(top, 0);
+        @include pxRem(padding, 65);
+        position: static;
+        .section-title::after {
+          @include pxRem(top, 275);
+        }
+        .description {
+          @include pxRem(margin-top, 50);
+        }
+      }
+    }
+  }
+}
