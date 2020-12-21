@@ -2,27 +2,53 @@
   color: map-get($colors, white);
   position: relative;
   .slide-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     .sub-title {
       @include pxRem(font-size, 16);
+      top: 47%;
+      left: 38%;
+      position: absolute;
       text-transform: uppercase;
       font-weight: 300;
+      -webkit-animation-name: showSubTitle;
+      -webkit-animation-duration: .6s;
+      animation-name: showSubTitle;
+      animation-duration: .6s;
+      animation-fill-mode: both;
     }
     .title {
       @include pxRem(font-size, 70);
-      @include pxRem(margin-bottom, 20);
+      top: 49%;
+      position: absolute;
+      -webkit-animation-name: showTitleTop;
+      -webkit-animation-duration: .6s;
+      animation-name: showTitleTop;
+      animation-duration: .6s;
+      animation-fill-mode: both;
+      animation-delay: .5s;
+    }
+    .title.mb-20 {
+      top: 56%;
+      position: absolute;
+      -webkit-animation-name: showTitleBottom;
+      -webkit-animation-duration: .6s;
+      animation-name: showTitleBottom;
+      animation-duration: .6s;
+      animation-fill-mode: both;
+      animation-delay: .5s;
     }
     a {
-      @include pxRem(font-size, 20);
+      @include pxRem(font-size, 14);
       color: map-get($colors, white);
       text-transform: uppercase;
       font-weight: 400;
-      animation-duration: .6s;
-      animation-timing-function: ease;
+      left: 46%;
+      position: absolute;
+      -webkit-animation-name: showTextBtn;
+      -webkit-animation-duration: .6s;
+      animation-name: showTextBtn;
+      animation-duration: .5s;
       animation-fill-mode: both;
+      animation-delay: 1s;
     }
   }
 }
@@ -71,6 +97,47 @@
     }
   }
 }
-@keyframes showText {
-
+@keyframes showSubTitle {
+  from {
+    opacity: 0;
+    transform: scale(.4)
+  }
+  to {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+@keyframes showTitleTop {
+  from {
+    opacity: 0;
+    left: 27%;
+  }
+  to {
+    opacity: 1;
+    left: 29%;
+  }
+}
+@keyframes showTitleBottom {
+  from {
+    opacity: 0;
+    right: 26%;
+  }
+  to {
+    opacity: 1;
+    right: 32%;
+  }
+}
+@keyframes showTextBtn {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+  50% {
+    opacity: 1;
+    bottom: 35%;
+  }
+  100% {
+    opacity: 1;
+    bottom: 32%;
+  }
 }

@@ -710,7 +710,8 @@ h6 {
   .header-nav .menu-item:hover > a {
     color: #f19533; }
   .header-nav .menu-item:hover .dropdown {
-    display: block; }
+    display: block;
+    z-index: 2; }
   .header-nav .menu-item.big-dropdown li {
     width: auto;
     height: auto; }
@@ -954,30 +955,53 @@ a {
 .slideshow-top {
   color: #fff;
   position: relative; }
-  .slideshow-top .slide-content {
+  .slideshow-top .slide-content .sub-title {
+    font-size: 16px;
+    font-size: 1rem;
+    top: 47%;
+    left: 38%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .slideshow-top .slide-content .sub-title {
-      font-size: 16px;
-      font-size: 1rem;
-      text-transform: uppercase;
-      font-weight: 300; }
-    .slideshow-top .slide-content .title {
-      font-size: 70px;
-      font-size: 4.375rem;
-      margin-bottom: 20px;
-      margin-bottom: 1.25rem; }
-    .slideshow-top .slide-content a {
-      font-size: 20px;
-      font-size: 1.25rem;
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: 400;
-      animation-duration: .6s;
-      animation-timing-function: ease;
-      animation-fill-mode: both; }
+    text-transform: uppercase;
+    font-weight: 300;
+    -webkit-animation-name: showSubTitle;
+    -webkit-animation-duration: .6s;
+    animation-name: showSubTitle;
+    animation-duration: .6s;
+    animation-fill-mode: both; }
+  .slideshow-top .slide-content .title {
+    font-size: 70px;
+    font-size: 4.375rem;
+    top: 49%;
+    position: absolute;
+    -webkit-animation-name: showTitleTop;
+    -webkit-animation-duration: .6s;
+    animation-name: showTitleTop;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+    animation-delay: .5s; }
+  .slideshow-top .slide-content .title.mb-20 {
+    top: 56%;
+    position: absolute;
+    -webkit-animation-name: showTitleBottom;
+    -webkit-animation-duration: .6s;
+    animation-name: showTitleBottom;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+    animation-delay: .5s; }
+  .slideshow-top .slide-content a {
+    font-size: 14px;
+    font-size: 0.875rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    left: 46%;
+    position: absolute;
+    -webkit-animation-name: showTextBtn;
+    -webkit-animation-duration: .6s;
+    animation-name: showTextBtn;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    animation-delay: 1s; }
 
 .sliddeshow-bottom {
   height: 466px;
@@ -1026,7 +1050,42 @@ a {
     .information-list .item {
       border-right: 0; } }
 
-@keyframes showText {}.section-introduction {
+@keyframes showSubTitle {
+  from {
+    opacity: 0;
+    transform: scale(0.4); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes showTitleTop {
+  from {
+    opacity: 0;
+    left: 27%; }
+  to {
+    opacity: 1;
+    left: 29%; } }
+
+@keyframes showTitleBottom {
+  from {
+    opacity: 0;
+    right: 26%; }
+  to {
+    opacity: 1;
+    right: 32%; } }
+
+@keyframes showTextBtn {
+  0% {
+    opacity: 0;
+    bottom: 0; }
+  50% {
+    opacity: 1;
+    bottom: 35%; }
+  100% {
+    opacity: 1;
+    bottom: 32%; } }
+
+.section-introduction {
   padding: 150px 0px;
   padding: 9.375rem 0rem;
   border-top: 1px solid #ebebeb; }

@@ -59,6 +59,7 @@
       }
       .dropdown {
         display: block;
+        z-index: 2;
       }
     }
     &.big-dropdown {
