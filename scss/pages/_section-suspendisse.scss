@@ -8,7 +8,7 @@
     }
   }
   .suspendisse-top-right {
-    @include pxRem(padding, 120);
+    @include pxRem(padding, 120 50);
     background-color: map-get($colors, bg-light);
     .section-title {
       @include pxRem(line-height, 50);
@@ -40,7 +40,8 @@
   }
   .suspendisse-bottom {
     @include pxRem(height, 395);
-    @include pxRem(padding, 120 420);
+    @extend %flex-centered;
+    flex-direction: column;
     background-color: map-get($colors, primary);
     color: map-get($colors, white);
     .title {
@@ -60,10 +61,17 @@
         font-weight: 400;
         text-transform: uppercase;
       }
+      .btn-outline-light:hover {
+        background-color: map-get($colors, bg-light2);
+      }
       .btn-primary {
         @include pxRem(margin-left, 15);
         border-color: map-get($colors, white);
         color: map-get($colors, white);
+        &:hover {
+          background-color: map-get($colors, white);
+          color: map-get($colors, black);
+        }
       }
       i {
         @include pxRem(margin-right, 4);

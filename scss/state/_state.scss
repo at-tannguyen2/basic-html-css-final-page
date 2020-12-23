@@ -30,3 +30,19 @@
 a {
   transition: all 0.3s ease-out 0s;
 }
+.bg-opacity, .bg-opacity2, .bg-opacity3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.bg-opacity {
+  background: rgba(0, 0, 0, 0.6);
+}
+.bg-opacity2 {
+  background: rgba(0, 0, 0, 0.8);
+}
+.bg-opacity3 {
+  background: rgba(0, 0, 0, 0.9);
+}

@@ -2,6 +2,10 @@
   .service-top {
     @include pxRem(padding, 150 200 200);
     background-image: url(../image/bg-service.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     .section-title {
       @include pxRem(line-height, 50);
       color: map-get($colors, white);
@@ -15,6 +19,10 @@
       text-transform: uppercase;
       i {
         @include pxRem(margin-right, 4);
+      }
+      &:hover {
+        background-color: map-get($colors, bg-black);
+        border: 1px solid map-get($colors, bg-black);
       }
     }
   }
@@ -47,6 +55,10 @@
       text-transform: uppercase;
       i {
         @include pxRem(margin-right, 4);
+      }
+      &:hover {
+        background-color: map-get($colors, bg-black);
+        border: 1px solid map-get($colors, bg-black);
       }
     }
   }

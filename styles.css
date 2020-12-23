@@ -362,7 +362,7 @@ article, aside, details, figure, footer, header, menu, nav, section, summary {
 .pb-30 {
   padding-bottom: 1.875rem !important; }
 
-.flex-centered {
+.flex-centered, .section-suspendisse .suspendisse-bottom {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -711,7 +711,7 @@ h6 {
     color: #f19533; }
   .header-nav .menu-item:hover .dropdown {
     display: block;
-    z-index: 2; }
+    z-index: 3; }
   .header-nav .menu-item.big-dropdown li {
     width: auto;
     height: auto; }
@@ -749,8 +749,8 @@ h6 {
   .header-nav .menu-item.have-cart {
     position: relative; }
     .header-nav .menu-item.have-cart .number {
-      padding: 2px 4px;
-      padding: 0.125rem 0.25rem;
+      padding: 2px 5px;
+      padding: 0.125rem 0.3125rem;
       top: 22px;
       top: 1.375rem;
       font-size: 12px;
@@ -760,6 +760,10 @@ h6 {
       background-color: #f19533;
       color: #fff;
       position: absolute; }
+  .header-nav .menu-item.have-search i {
+    cursor: pointer; }
+    .header-nav .menu-item.have-search i:hover {
+      color: #f19533; }
 
 .header-nav .dropdown-holder {
   position: relative; }
@@ -776,6 +780,14 @@ h6 {
 .header-nav .btn-toggle {
   display: none; }
 
+.header-nav.fixed {
+  position: fixed;
+  background: white;
+  z-index: 5;
+  width: 100%;
+  top: 0;
+  transition: all 1s; }
+
 .search-box {
   padding: 30px 50px 30px 45px;
   padding: 1.875rem 3.125rem 1.875rem 2.8125rem;
@@ -783,7 +795,8 @@ h6 {
   position: absolute;
   background-color: #fff;
   right: 0;
-  left: 0; }
+  left: 0;
+  z-index: 2; }
   .search-box .search-form .search-input {
     width: 1045px;
     width: 65.3125rem;
@@ -858,6 +871,8 @@ h6 {
       .page-footer .footer-top .content-list li a i {
         margin-right: 15px;
         margin-right: 0.9375rem; }
+      .page-footer .footer-top .content-list li a:hover {
+        color: #fff; }
   .page-footer .footer-top .contact-text span {
     padding-left: 5px;
     padding-left: 0.3125rem;
@@ -893,12 +908,18 @@ h6 {
 
 @media (max-width: 767px) {
   .page-footer .footer-top {
-    padding: 40px 0px;
-    padding: 2.5rem 0rem; }
+    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
+    padding-top: 0; }
     .page-footer .footer-top .container {
       flex-wrap: wrap; }
     .page-footer .footer-top .col-3 {
-      width: 100%; } }
+      margin-top: 35px;
+      margin-top: 2.1875rem;
+      width: 100%; }
+    .page-footer .footer-top .logo-footer {
+      margin-bottom: 35px;
+      margin-bottom: 2.1875rem; } }
 
 .section-title {
   font-size: 35px;
@@ -937,6 +958,22 @@ h6 {
 a {
   transition: all 0.3s ease-out 0s; }
 
+.bg-opacity, .bg-opacity2, .bg-opacity3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.bg-opacity {
+  background: rgba(0, 0, 0, 0.6); }
+
+.bg-opacity2 {
+  background: rgba(0, 0, 0, 0.8); }
+
+.bg-opacity3 {
+  background: rgba(0, 0, 0, 0.9); }
+
 .bg-primary {
   background-color: #ff971c; }
 
@@ -964,9 +1001,9 @@ a {
     text-transform: uppercase;
     font-weight: 300;
     -webkit-animation-name: showSubTitle;
-    -webkit-animation-duration: .6s;
+    -webkit-animation-duration: 0.6s;
     animation-name: showSubTitle;
-    animation-duration: .6s;
+    animation-duration: 0.6s;
     animation-fill-mode: both; }
   .slideshow-top .slide-content .title {
     font-size: 70px;
@@ -974,20 +1011,20 @@ a {
     top: 49%;
     position: absolute;
     -webkit-animation-name: showTitleTop;
-    -webkit-animation-duration: .6s;
+    -webkit-animation-duration: 0.6s;
     animation-name: showTitleTop;
-    animation-duration: .6s;
+    animation-duration: 0.6s;
     animation-fill-mode: both;
-    animation-delay: .5s; }
+    animation-delay: 0.5s; }
   .slideshow-top .slide-content .title.mb-20 {
     top: 56%;
     position: absolute;
     -webkit-animation-name: showTitleBottom;
-    -webkit-animation-duration: .6s;
+    -webkit-animation-duration: 0.6s;
     animation-name: showTitleBottom;
-    animation-duration: .6s;
+    animation-duration: 0.6s;
     animation-fill-mode: both;
-    animation-delay: .5s; }
+    animation-delay: 0.5s; }
   .slideshow-top .slide-content a {
     font-size: 14px;
     font-size: 0.875rem;
@@ -997,9 +1034,9 @@ a {
     left: 46%;
     position: absolute;
     -webkit-animation-name: showTextBtn;
-    -webkit-animation-duration: .6s;
+    -webkit-animation-duration: 0.6s;
     animation-name: showTextBtn;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-fill-mode: both;
     animation-delay: 1s; }
 
@@ -1084,6 +1121,25 @@ a {
   100% {
     opacity: 1;
     bottom: 32%; } }
+
+@media (max-width: 767px) {
+  .slideshow-top .slide-content .sub-title {
+    font-size: 11px;
+    font-size: 0.6875rem;
+    top: 25%;
+    left: 21%; }
+  .slideshow-top .slide-content .title {
+    font-size: 22px;
+    font-size: 1.375rem;
+    top: 38%; }
+  .slideshow-top .slide-content .title.mb-20 {
+    top: 47%; }
+  .slideshow-top .slide-content a {
+    font-size: 10px;
+    font-size: 0.625rem;
+    left: 38%; }
+  .slideshow-top .slideshow-list .item-slide {
+    line-height: 0; } }
 
 .section-introduction {
   padding: 150px 0px;
@@ -1175,7 +1231,11 @@ a {
 .section-service .service-top {
   padding: 150px 200px 200px;
   padding: 9.375rem 12.5rem 12.5rem;
-  background-image: url(../image/bg-service.jpg); }
+  background-image: url(../image/bg-service.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
   .section-service .service-top .section-title {
     line-height: 50px;
     line-height: 3.125rem;
@@ -1192,6 +1252,9 @@ a {
     .section-service .service-top .btn-primary i {
       margin-right: 4px;
       margin-right: 0.25rem; }
+    .section-service .service-top .btn-primary:hover {
+      background-color: #101010;
+      border: 1px solid #101010; }
 
 .section-service .service-bottom {
   height: 700px;
@@ -1229,6 +1292,9 @@ a {
     .section-service .service-bottom .btn-primary i {
       margin-right: 4px;
       margin-right: 0.25rem; }
+    .section-service .service-bottom .btn-primary:hover {
+      background-color: #101010;
+      border: 1px solid #101010; }
 
 @media (max-width: 767px) {
   .section-service .service-top {
@@ -1260,7 +1326,11 @@ a {
 .section-features {
   padding: 117px 0px;
   padding: 7.3125rem 0rem;
-  background-image: url(../../image/bg-feature.jpg); }
+  background-image: url(../../image/bg-feature.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
   .section-features .feature-list .item {
     height: 492px;
     height: 30.75rem;
@@ -1355,6 +1425,9 @@ a {
     .section-our-portfolio .order-list .btn-primary {
       padding: 11px 25px;
       padding: 0.6875rem 1.5625rem; }
+      .section-our-portfolio .order-list .btn-primary:hover {
+        background-color: #101010;
+        border: 1px solid #101010; }
     .section-our-portfolio .order-list .btn-outline-light {
       padding: 11px 25px;
       padding: 0.6875rem 1.5625rem;
@@ -1395,12 +1468,8 @@ a {
     flex-wrap: wrap;
     justify-content: space-between; }
     .section-our-portfolio .product-list .item {
-      height: 383px;
-      height: 23.9375rem;
-      width: 383px;
-      width: 23.9375rem;
-      margin-top: 12px;
-      margin-top: 0.75rem; }
+      padding: 4px;
+      padding: 0.25rem; }
     .section-our-portfolio .product-list .inner-item {
       display: block;
       position: relative; }
@@ -1451,15 +1520,17 @@ a {
       width: 85%; }
     .section-our-portfolio .order-list {
       flex-wrap: wrap; }
-    .section-our-portfolio .product-list .hide {
-      display: none; } }
+    .section-our-portfolio .product-list .col-4 {
+      width: 100%; } }
 
 .section-information .information-top {
   padding: 175px;
   padding: 10.9375rem;
   background-image: url(/image/bg-infor.jpg);
-  background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
   .section-information .information-top .section-title {
     line-height: 50px;
     line-height: 3.125rem;
@@ -1477,15 +1548,21 @@ a {
     color: #fff;
     width: 50%;
     opacity: 0.6; }
+  .section-information .information-top .subtitle {
+    position: relative; }
   .section-information .information-top .btn-primary {
     padding: 17px 33px;
     padding: 1.0625rem 2.0625rem;
-    margin-top: 115px;
-    margin-top: 7.1875rem;
-    text-transform: uppercase; }
+    margin-top: 65px;
+    margin-top: 4.0625rem;
+    text-transform: uppercase;
+    position: relative; }
     .section-information .information-top .btn-primary i {
       margin-right: 4px;
       margin-right: 0.25rem; }
+    .section-information .information-top .btn-primary:hover {
+      background-color: #101010;
+      border: 1px solid #101010; }
 
 .section-information .information-bottom {
   height: 415px;
@@ -1541,8 +1618,8 @@ a {
       height: 100%;
       width: 100%; }
   .section-suspendisse .suspendisse-top-right {
-    padding: 120px;
-    padding: 7.5rem;
+    padding: 120px 50px;
+    padding: 7.5rem 3.125rem;
     background-color: #f5f5f5; }
     .section-suspendisse .suspendisse-top-right .section-title {
       line-height: 50px;
@@ -1578,8 +1655,7 @@ a {
   .section-suspendisse .suspendisse-bottom {
     height: 395px;
     height: 24.6875rem;
-    padding: 120px 420px;
-    padding: 7.5rem 26.25rem;
+    flex-direction: column;
     background-color: #f19533;
     color: #fff; }
     .section-suspendisse .suspendisse-bottom .title {
@@ -1600,11 +1676,16 @@ a {
       padding: 0.5625rem 1.5625rem;
       font-weight: 400;
       text-transform: uppercase; }
+    .section-suspendisse .suspendisse-bottom .action .btn-outline-light:hover {
+      background-color: #f6f6f6; }
     .section-suspendisse .suspendisse-bottom .action .btn-primary {
       margin-left: 15px;
       margin-left: 0.9375rem;
       border-color: #fff;
       color: #fff; }
+      .section-suspendisse .suspendisse-bottom .action .btn-primary:hover {
+        background-color: #fff;
+        color: #111; }
     .section-suspendisse .suspendisse-bottom .action i {
       margin-right: 4px;
       margin-right: 0.25rem; }
@@ -1787,7 +1868,9 @@ a {
   .section-information.section-infor-bottom .information-bottom {
     padding-bottom: 65px;
     padding-bottom: 4.0625rem;
-    height: auto; } }
+    height: auto; }
+  .section-information.section-infor-bottom .item {
+    border-right: 0 !important; } }
 
 .section-recent-blog {
   padding: 170px 0px 150px;

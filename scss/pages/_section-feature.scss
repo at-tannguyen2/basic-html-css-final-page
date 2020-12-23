@@ -1,6 +1,10 @@
 .section-features {
   @include pxRem(padding, 117 0);
   background-image: url(../../image/bg-feature.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   .feature-list {
     .item {
       @include pxRem(height, 492);

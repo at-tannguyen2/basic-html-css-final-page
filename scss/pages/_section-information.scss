@@ -2,8 +2,10 @@
   .information-top {
     @include pxRem(padding, 175);
     background-image: url(/image/bg-infor.jpg);
-    background-position: center center;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     .section-title {
       @include pxRem(line-height, 50);
       color: map-get($colors, white);
@@ -19,12 +21,20 @@
       width: 50%;
       opacity: 0.6;
     }
+    .subtitle {
+      position: relative;
+    }
     .btn-primary {
       @include pxRem(padding, 17 33);
-      @include pxRem(margin-top, 115);
+      @include pxRem(margin-top, 65);
       text-transform: uppercase;
+      position: relative;
       i {
         @include pxRem(margin-right, 4);
+      }
+      &:hover {
+        background-color: map-get($colors, bg-black);
+        border: 1px solid map-get($colors, bg-black);
       }
     }
   }

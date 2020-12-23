@@ -10,9 +10,9 @@
       text-transform: uppercase;
       font-weight: 300;
       -webkit-animation-name: showSubTitle;
-      -webkit-animation-duration: .6s;
+      -webkit-animation-duration: 0.6s;
       animation-name: showSubTitle;
-      animation-duration: .6s;
+      animation-duration: 0.6s;
       animation-fill-mode: both;
     }
     .title {
@@ -20,21 +20,21 @@
       top: 49%;
       position: absolute;
       -webkit-animation-name: showTitleTop;
-      -webkit-animation-duration: .6s;
+      -webkit-animation-duration: 0.6s;
       animation-name: showTitleTop;
-      animation-duration: .6s;
+      animation-duration: 0.6s;
       animation-fill-mode: both;
-      animation-delay: .5s;
+      animation-delay: 0.5s;
     }
     .title.mb-20 {
       top: 56%;
       position: absolute;
       -webkit-animation-name: showTitleBottom;
-      -webkit-animation-duration: .6s;
+      -webkit-animation-duration: 0.6s;
       animation-name: showTitleBottom;
-      animation-duration: .6s;
+      animation-duration: 0.6s;
       animation-fill-mode: both;
-      animation-delay: .5s;
+      animation-delay: 0.5s;
     }
     a {
       @include pxRem(font-size, 14);
@@ -44,9 +44,9 @@
       left: 46%;
       position: absolute;
       -webkit-animation-name: showTextBtn;
-      -webkit-animation-duration: .6s;
+      -webkit-animation-duration: 0.6s;
       animation-name: showTextBtn;
-      animation-duration: .5s;
+      animation-duration: 0.5s;
       animation-fill-mode: both;
       animation-delay: 1s;
     }
@@ -100,11 +100,11 @@
 @keyframes showSubTitle {
   from {
     opacity: 0;
-    transform: scale(.4)
+    transform: scale(0.4);
   }
   to {
     opacity: 1;
-    transform: scale(1)
+    transform: scale(1);
   }
 }
 @keyframes showTitleTop {
@@ -139,5 +139,32 @@
   100% {
     opacity: 1;
     bottom: 32%;
+  }
+}
+@include respond-below(medium) {
+  .slideshow-top {
+    .slide-content {
+      .sub-title {
+        @include pxRem(font-size, 11);
+        top: 25%;
+        left: 21%;
+      }
+      .title {
+        @include pxRem(font-size, 22);
+        top: 38%;
+      }
+      .title.mb-20 {
+        top: 47%;
+      }
+      a {
+        @include pxRem(font-size, 10);
+        left: 38%;
+      }
+    }
+    .slideshow-list {
+      .item-slide {
+        line-height: 0;
+      }
+    }
   }
 }

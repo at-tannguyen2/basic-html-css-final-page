@@ -29,6 +29,9 @@
           i {
             @include pxRem(margin-right, 15);
           }
+          &:hover {
+            color: map-get($colors, white);
+          }
         }
       }
     }
@@ -68,12 +71,17 @@
 @include respond-below(medium) {
   .page-footer {
     .footer-top {
-      @include pxRem(padding, 40 0);
+      @include pxRem(padding-bottom, 40);
+      padding-top: 0;
       .container {
         flex-wrap: wrap;
       }
       .col-3 {
+        @include pxRem(margin-top, 35);
         width: 100%;
+      }
+      .logo-footer {
+        @include pxRem(margin-bottom, 35);
       }
     }
   }

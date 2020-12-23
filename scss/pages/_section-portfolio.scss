@@ -30,6 +30,10 @@
     }
     .btn-primary {
       @include pxRem(padding, 11 25);
+      &:hover {
+        background-color: map-get($colors, bg-black);
+        border: 1px solid map-get($colors, bg-black);
+      }
     }
     .btn-outline-light {
       @include pxRem(padding, 11 25);
@@ -66,9 +70,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     .item {
-      @include pxRem(height, 383);
-      @include pxRem(width, 383);
-      @include pxRem(margin-top, 12);
+      @include pxRem(padding, 4);
     }
     .inner-item {
       display: block;
@@ -128,8 +130,8 @@
       flex-wrap: wrap;
     }
     .product-list {
-      .hide {
-        display: none;
+      .col-4 {
+        width: 100%;
       }
     }
   }
