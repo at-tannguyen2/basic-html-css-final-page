@@ -43,11 +43,31 @@
     }
   }
 }
+@include respond-below(wide) {
+  .section-information {
+    &.section-infor-bottom {
+      .information-top {
+        .description {
+          @include pxRem(margin, 40 auto 0);
+        }
+      }
+      .information-bottom {
+        height: auto;
+        .information-list {
+          @include pxRem(top, -35);
+          .item {
+            @include pxRem(padding, 65 15);
+          }
+        }
+      }
+    }
+  }
+}
 @include respond-below(medium) {
   .section-information {
     &.section-infor-bottom {
       .section-title::after {
-        @include pxRem(top, 320);
+        @include pxRem(top, 265);
       }
       .information-bottom {
         @include pxRem(padding-bottom, 65);

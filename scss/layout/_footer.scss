@@ -68,6 +68,16 @@
     }
   }
 }
+@include respond-below(wide) {
+  .page-footer {
+    .footer-top {
+      @include pxRem(padding, 50 0);
+      p, a {
+        @include pxRem(font-size, 11 !important);
+      }
+    }
+  }
+}
 @include respond-below(medium) {
   .page-footer {
     .footer-top {

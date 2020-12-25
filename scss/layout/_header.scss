@@ -184,6 +184,19 @@
 .show {
   display: block;
 }
+@include respond-below(wide) {
+  .header-nav {
+    .menu-item {
+      @include pxRem(padding, 38 8);
+    }
+    &.fixed {
+      width: auto;
+      .menu-item {
+        @include pxRem(padding, 38 12);
+      }
+    }
+  }
+}
 @include respond-below(medium) {
   .header-top {
     @include pxRem(height, 88);
@@ -201,6 +214,9 @@
     }
     .btn-toggle {
       display: block;
+    }
+    &.fixed {
+      width: 100%;
     }
   }
 }

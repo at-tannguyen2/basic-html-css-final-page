@@ -60,6 +60,14 @@
     }
   }
 }
+@include respond-below(wide) {
+  .section-introduction {
+    @include pxRem(padding, 50 0);
+    .description {
+      @include pxRem(margin-top, 20);
+    }
+  }
+}
 @include respond-below(medium) {
   .section-introduction {
     @include pxRem(padding, 60 0);
@@ -73,7 +81,7 @@
       @include pxRem(padding-left, 30);
     }
     .section-title::after {
-      @include pxRem(top, 320);
+      @include pxRem(top, 250);
     }
     .introduction-list {
       flex-direction: column;

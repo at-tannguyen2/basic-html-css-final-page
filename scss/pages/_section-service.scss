@@ -63,12 +63,49 @@
     }
   }
 }
+@include respond-below(largest) {
+  .section-service {
+    .service-top {
+      .section-title::after {
+        @include pxRem(top, 180);
+      }
+    }
+  }
+}
+@include respond-below(wide) {
+  .section-service {
+    .service-top {
+      @include pxRem(padding, 65 40 125);
+      .section-title::after {
+        @include pxRem(top, 130);
+      }
+      .btn-primary {
+        @include pxRem(margin-top, 80);
+      }
+    }
+    .service-bottom {
+      height: auto;
+      .main-content {
+        @include pxRem(padding, 40 60);
+        .section-title::after {
+          display: none;
+        }
+      }
+      .description {
+        @include pxRem(margin-top, 20);
+      }
+      .btn-primary {
+        @include pxRem(margin-top, 35);
+      }
+    }
+  }
+}
 @include respond-below(medium) {
   .section-service {
     .service-top {
       @include pxRem(padding, 40);
       .section-title::after {
-        @include pxRem(top, 315);
+        @include pxRem(top, 215);
       }
       .btn-primary {
         @include pxRem(margin-top, 45);

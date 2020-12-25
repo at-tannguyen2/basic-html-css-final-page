@@ -1,0 +1,14 @@
+.btn-go-top {
+  @include pxRem(width, 40);
+  @include pxRem(height, 40);
+  @include pxRem(bottom, 20);
+  @include pxRem(right, 30);
+  @include pxRem(padding-top, 10);
+  color: map-get($colors, white);
+  background-color: map-get($colors, primary);
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+  display: none;
+  cursor: pointer;
+}

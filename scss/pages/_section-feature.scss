@@ -8,7 +8,6 @@
   .feature-list {
     .item {
       @include pxRem(height, 492);
-      width: 100%;
       position: relative;
       text-align: center;
       background-repeat: round;
@@ -59,14 +58,30 @@
     }
   }
 }
+@include respond-below(wide) {
+  .section-features {
+    @include pxRem(padding, 70 0);
+    .feature-list {
+      .item {
+        @include pxRem(height, 390);
+        @include pxRem(margin, 5 !important);
+        .feature-name {
+          @include pxRem(font-size, 17);
+        }
+      }
+    }
+  }
+}
 @include respond-below(medium) {
   .section-features {
     @include pxRem(padding, 40 0);
     .feature-list {
       flex-wrap: wrap;
       .item {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
+        @include pxRem(height, 492);
+      }
+      .col-3 {
+        width: 100%;
       }
     }
   }

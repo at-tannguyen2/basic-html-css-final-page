@@ -46,3 +46,8 @@ a {
 .bg-opacity3 {
   background: rgba(0, 0, 0, 0.9);
 }
+@include respond-below(wide) {
+  .section-title {
+    @include pxRem(font-size, 28);
+  }
+}

@@ -10,6 +10,17 @@
     }
   }
 }
+@include respond-below(wide) {
+  .section-banner {
+    @include pxRem(height, 155);
+    .container {
+      img {
+        @include pxRem(width, 145);
+
+      }
+    }
+  }
+}
 @include respond-below(medium) {
   .section-banner {
     @include pxRem(padding, 55 0);

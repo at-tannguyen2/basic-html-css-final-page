@@ -54,6 +54,17 @@
     }
   }
 }
+@include respond-below(wide) {
+  .section-recent-blog {
+    @include pxRem(padding, 80 0);
+    .recent-blog-list {
+      @include pxRem(margin-top, 85);
+      .inner-item-bottom {
+        @include pxRem(padding, 15);
+      }
+    }
+  }
+}
 @include respond-below(medium) {
   .section-recent-blog {
     @include pxRem(padding, 40 0);

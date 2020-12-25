@@ -117,11 +117,19 @@
     }
   }
 }
+@include respond-below(wide) {
+  .section-our-portfolio {
+    @include pxRem(padding, 80 0);
+    .order-list {
+      @include pxRem(margin-top, 60);
+    }
+  }
+}
 @include respond-below(medium) {
   .section-our-portfolio {
     @include pxRem(padding, 40 15);
     .section-title::after {
-      @include pxRem(top, 90);
+      @include pxRem(top, 50);
     }
     .description {
       width: 85%;

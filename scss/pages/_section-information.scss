@@ -63,12 +63,38 @@
     }
   }
 }
+@include respond-below(largest) {
+  .section-information {
+    .information-top {
+      .section-title::after {
+        @include pxRem(top, 180);
+      }
+    }
+  }
+}
+@include respond-below(wide) {
+  .section-information {
+    .information-top {
+      @include pxRem(padding, 60 40);
+      .btn-primary {
+        @include pxRem(margin-top, 40 30);
+      }
+    }
+    .information-bottom {
+      height: auto;
+      .information-list {
+        @include pxRem(top, -35);
+        @include pxRem(padding, 30);
+      }
+    }
+  }
+}
 @include respond-below(medium) {
   .section-information {
     .information-top {
       @include pxRem(padding, 40);
       .section-title::after {
-        @include pxRem(top, 375);
+        @include pxRem(top, 275);
       }
       .description {
         width: 80%;

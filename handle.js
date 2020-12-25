@@ -31,3 +31,17 @@ document.addEventListener('scroll', function() {
 //   console.log(slide)
 // }
 // handleSlide()
+
+
+//Handle go to top button
+const goToTop = document.querySelector('.btn-go-top')
+document.addEventListener('scroll', function() {
+  if (document.documentElement.scrollTop >= 20) {
+    goToTop.style.display = 'inline'
+  } else {
+    goToTop.style.display = 'none'
+  }
+})
+goToTop.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+})
